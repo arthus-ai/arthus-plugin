@@ -1,0 +1,16 @@
+{
+  "name": "arthus",
+  "description": "The Arthus plugin: your meetings, summaries, transcripts and tasks in your AI assistant.",
+  "owner": {
+    "name": "Arthus",
+    "email": "contact@arthus.ai",
+    "url": "https://arthus.ai"
+  },
+  "plugins": [
+    {
+      "name": "arthus",
+      "source": "./",
+      "description": "Find meetings, read summaries and transcripts, and keep tasks and folders in order."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "name": "arthus",
+  "version": "0.1.0",
+  "description": "Your Arthus meetings in your AI assistant: find meetings, read summaries and transcripts, and keep tasks and folders in order.",
+  "author": {
+    "name": "Arthus",
+    "email": "contact@arthus.ai",
+    "url": "https://arthus.ai"
+  },
+  "homepage": "https://arthus.ai/conectar",
+  "keywords": [
+    "meetings",
+    "transcripts",
+    "tasks",
+    "notes",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Arthus",
+    "shortDescription": "Your meetings, summaries and tasks",
+    "longDescription": "Arthus records and transcribes your meetings and writes summaries with decisions and tasks. With this plugin, the assistant finds your meetings and reads their summaries and transcripts. It also lists and updates tasks, moves or renames meetings, names speakers and creates folders. Everything stays inside the Arthus account you connected. Recording, deleting, archiving, public links, email and file import stay in the Arthus app.",
+    "developerName": "Arthus",
+    "category": "Productivity",
+    "capabilities": [
+      "Find meetings",
+      "Read summaries and transcripts",
+      "List and update tasks",
+      "Organize folders"
+    ],
+    "websiteURL": "https://arthus.ai/conectar",
+    "supportURL": "https://arthus.ai/conectar",
+    "privacyPolicyURL": "https://arthus.ai/pt-BR/privacidade",
+    "termsOfServiceURL": "https://arthus.ai/pt-BR/termos",
+    "defaultPrompt": [
+      "What did we agree on in yesterday's meeting?",
+      "What are my open tasks this week?",
+      "Prepare me for my next meeting with Acme."
+    ],
+    "brandColor": "#4F46E5",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "What was agreed in yesterday's meeting",
+              "prompt": "What did we agree on in yesterday's meeting?",
+              "tools_triggered": "list_meetings, get_meeting",
+              "expected_behavior": "Finds yesterday's meeting in the user's time zone. Lists its decisions and action items with owner and due date. Says they come from the Arthus AI summary and ends with the meeting link. With several meetings that day, it asks which one. With none, it says so and offers the most recent meeting."
+            },
+            {
+              "description": "Tasks for this week",
+              "prompt": "What are my tasks for this week?",
+              "tools_triggered": "list_tasks",
+              "expected_behavior": "Lists the open tasks due this week, overdue ones first. Each comes with its source meeting and link. It invents no owners or dates."
+            },
+            {
+              "description": "Mark a task as done",
+              "prompt": "Mark the task 'Send the proposal to Acme' as done.",
+              "tools_triggered": "list_tasks, update_task",
+              "expected_behavior": "Finds the matching open task, marks it done and confirms which task changed. If more than one task matches, it asks which one before changing anything."
+            },
+            {
+              "description": "Move a meeting to a folder",
+              "prompt": "Move the planning meeting to the Acme folder.",
+              "tools_triggered": "search_meetings, move_meeting",
+              "expected_behavior": "Finds the planning meeting and moves it to the Acme folder, then confirms. It does not archive or delete anything. If the folder does not exist, it says so and offers to create it."
+            },
+            {
+              "description": "Export a mind map",
+              "prompt": "Export the mind map of my last meeting.",
+              "tools_triggered": "get_meeting, export_mindmap",
+              "expected_behavior": "Returns the stored mind map of the most recent meeting as Markdown. Says it was written by Arthus AI and gives the meeting link."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unsupported deletion",
+              "prompt": "Delete all my meetings."
+            },
+            {
+              "description": "Unsupported public sharing",
+              "prompt": "Create a public link for my last meeting."
+            },
+            {
+              "description": "Unsupported archiving",
+              "prompt": "Archive all my meetings."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments."
+      },
+      "publication": {
+        "release_notes": "First release: find meetings, read summaries and transcripts, list and update tasks, and organize meetings into folders.",
+        "translations": {
+          "pt-BR": {
+            "subtitle": "Suas reuniões, resumos e tarefas",
+            "description": "O Arthus grava e transcreve as suas reuniões e escreve resumos com decisões e tarefas. Com este plugin, o assistente acha as suas reuniões e lê resumos e transcrições. Ele também lista e atualiza tarefas, move ou renomeia reuniões, dá nome aos locutores e cria pastas. Tudo só na conta do Arthus que você conectou. Gravar, apagar, arquivar, criar link público, enviar e-mail e importar arquivos continuam no app."
+          }
+        }
+      }
+    }
+  }
+}

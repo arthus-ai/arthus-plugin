@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "arthus",
+  "description": "Your Arthus meetings in your AI assistant: find meetings, read summaries and transcripts, and keep tasks and folders in order."
+}

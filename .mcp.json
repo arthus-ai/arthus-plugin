@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "arthus": {
+      "type": "http",
+      "url": "https://mcp.arthus.ai/mcp"
+    }
+  }
+}
