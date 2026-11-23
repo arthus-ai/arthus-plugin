@@ -1,146 +1,129 @@
-# Arthus — plugin para assistentes de IA
+# Arthus
 
-[English below](#english)
+[Português abaixo](#português)
 
-O Arthus grava e transcreve as suas reuniões e escreve resumos com decisões e tarefas. Este plugin
-liga o seu assistente de IA à sua conta do Arthus. Você pergunta sobre as reuniões e cuida das
-tarefas sem sair da conversa.
-
-## O que vem no plugin
-
-- **O servidor do Arthus**, no endereço `https://mcp.arthus.ai/mcp`. Ele usa o MCP, o padrão aberto
-  que liga assistentes a apps. Nenhuma senha ou chave fica no plugin: você entra pela tela do
-  Arthus.
-- **Três skills**, que ensinam o assistente a usar o Arthus bem:
-  - `recap` — o que ficou combinado numa reunião: decisões, tarefas e o que ficou em aberto. Cita
-    o tempo de cada fala e termina com o link.
-  - `my-week` — as suas tarefas em aberto, as atrasadas primeiro, e as decisões do período.
-  - `prepare` — prepara a próxima reunião com uma pessoa, uma empresa ou sobre um assunto.
-
-## O que o assistente pode e não pode fazer
-
-- **Pode:** achar reuniões e ler o resumo e a transcrição. Também lista tarefas, muda o andamento
-  ou o prazo, move ou renomeia reuniões, dá nome aos locutores quando você confirma o nome e cria
-  projetos.
-- **Não pode:** gravar, apagar ou arquivar reuniões, criar link público, enviar e-mail ou importar
-  arquivos. Isso continua no app do Arthus.
-- **Ainda não disponível pelo assistente:** perguntas respondidas pela IA do Arthus e a geração de
-  mapa mental.
-
-Na tela do Arthus, você escolhe o que cada assistente pode fazer. Para desconectar, use
-**Configurações → Assistentes de IA**.
-
-## Como instalar
-
-O passo a passo de cada assistente fica em <https://arthus.ai/conectar>.
-
-No primeiro uso, o assistente abre a tela de login do Arthus. Você entra e escolhe o que ele pode
-fazer.
-
-<!-- Só prometa o que prova (revisão de 22/10): a tabela por assistente volta aqui, linha a linha,
-quando cada cliente passar na matriz de testes do dono (PLANO_MCP_E_CLI §10.3). -->
-
-## Privacidade
-
-- O assistente só vê o que você vê no Arthus, com os limites do seu plano. No Grátis, são as
-  reuniões dos últimos 30 dias.
-- O que o assistente lê das reuniões passa a ser tratado também pela empresa dele, sob as regras
-  dela.
-- Resumos, tarefas e títulos marcados como da IA foram escritos pela IA do Arthus e podem ter
-  erros. Cada reunião vem com o link para você conferir na fonte.
-- Política de Privacidade: <https://arthus.ai/pt-BR/privacidade> · Termos de Uso:
-  <https://arthus.ai/pt-BR/termos>
-
-## Contato
-
-<contact@arthus.ai>
-
-## Licença
-
-O conteúdo deste plugin usa a licença Apache 2.0 (arquivo `LICENSE`). O logo
-(`assets/logo.png`) e o nome Arthus não entram na licença: o logo só pode ser usado sem
-alteração, para falar do Arthus. Detalhes no arquivo `NOTICE`.
-
----
-
-## English
-
-Arthus records and transcribes your meetings and writes summaries with decisions and tasks. This
-plugin connects your AI assistant to your Arthus account. You ask about your meetings and handle
+Arthus records and transcribes your meetings. Its AI writes summaries with the decisions and tasks.
+This plugin connects your AI assistant to your Arthus account. Ask about your meetings and handle
 your tasks without leaving the conversation.
 
-### What is in the plugin
+## What is in the plugin
 
 - **The Arthus server**, at `https://mcp.arthus.ai/mcp`. It uses MCP, the open standard that
-  connects assistants to apps. No password or key is stored in the plugin: you sign in on the
-  Arthus screen.
+  connects assistants to apps. The plugin holds no password or key. You sign in on the Arthus
+  website.
 - **Three skills** that teach the assistant to use Arthus well:
-  - `recap` — what was agreed in a meeting: decisions, tasks and what was left open. It quotes the
-    time of each passage and ends with the link.
-  - `my-week` — your open tasks, overdue first, and the decisions of the period.
-  - `prepare` — gets you ready for the next meeting with a person, a company or about a subject.
+  - `recap`: what was agreed in a meeting, its tasks and what was left open. Each timestamp it
+    cites links to that moment.
+  - `my-week`: your open tasks, overdue first, and the week's decisions.
+  - `prepare`: prepares you for your next meeting with a person or a company, or on a topic.
 
-### What the assistant can and cannot do
+## What the assistant can do
 
-- **Can:** find meetings and read the summary and the transcript. It also lists tasks, changes
-  their status or due date, moves or renames meetings, names speakers when you confirm the name,
-  and creates folders.
-- **Cannot:** record, delete or archive meetings, create public links, send email or import files.
-  Those stay in the Arthus app.
-- **Not yet available through the assistant:** questions answered by Arthus AI and mind map
-  generation.
+You choose the permissions when you connect. Read is always on; the others start off.
 
-On the Arthus screen, you choose what each assistant may do. To disconnect, use
-**Settings → AI assistants**.
+- **Read:** find meetings, read summaries and transcripts, and list tasks and projects.
+- **Organize, if you allow it:** change a task's status or due date, and move or rename meetings.
+  It can also name a speaker once you confirm, and create projects.
+- **Use Arthus AI, if you allow it:** ask Arthus AI about one meeting, or create its mind map.
+  This has its own hourly and daily limit.
 
-### How to install
+Only the Arthus app does these: recording, deleting or archiving meetings, public links, email,
+file import and plan changes.
+
+To change the permissions or disconnect, go to **Settings → AI assistants** in Arthus.
+
+## How to install
 
 The steps for each assistant are at <https://arthus.ai/conectar>.
 
-On first use, the assistant opens the Arthus sign-in screen. You sign in and choose what it may do.
+On first use, the assistant opens the Arthus sign-in page. Sign in, confirm the email code if
+asked, and choose what it may do.
 
-### Privacy
+## Privacy
 
-- The assistant only sees what you see in Arthus, within your plan's limits. On Free, that is the
-  meetings of the last 30 days.
-- What the assistant reads from your meetings is also handled by the assistant's company, under
-  its rules.
-- Summaries, tasks and titles marked as AI-written were written by Arthus AI and may have errors.
-  Each meeting comes with its link, so you can check the source.
-- Privacy Policy: <https://arthus.ai/pt-BR/privacidade> · Terms of Use:
-  <https://arthus.ai/pt-BR/termos>
+- The assistant only sees what you see in Arthus, within your plan. On the Free plan, that means
+  meetings from the last 30 days.
+- Meetings recorded as interviews, and meetings marked "Third-party data", do not reach the
+  assistant.
+- What the assistant reads from your meetings is also processed by the company behind the
+  assistant, under its own terms.
+- Summaries, tasks, analyses, mind maps and answers come from Arthus AI. So do titles and speaker
+  names marked as AI. They may have errors. Each meeting comes with its link, so you can check the
+  source.
+- Privacy Policy (English summary; the Portuguese text prevails): <https://arthus.ai/en/privacidade>
+  · Terms of Use, in Portuguese: <https://arthus.ai/pt-BR/termos>
 
-### Contact
+## Contact
 
 <contact@arthus.ai>
 
-### License
+## License
 
 The contents of this plugin are under the Apache License 2.0 (`LICENSE`). The logo
-(`assets/logo.png`) and the Arthus name are not licensed: the logo may only be used unmodified,
-to refer to Arthus. See `NOTICE`.
+(assets/logo.png) and the Arthus name are not covered by this license. The logo may only be used
+unmodified, to refer to Arthus. See `NOTICE`.
 
 ---
 
-## Para quem mantém: os manifestos e de onde vem cada campo
+## Português
 
-Esta pasta é a fonte única. Ela mora em `connect/plugins/arthus/` no repositório do Arthus e é
-copiada para o repositório público por `connect/scripts/publicar-plugin.mjs`. Conferido em
-22/10/2026.
+O Arthus grava e transcreve as suas reuniões. A IA dele escreve resumos com as decisões e as
+tarefas. Este plugin liga o seu assistente de IA à sua conta do Arthus. Você pergunta sobre as
+reuniões e cuida das tarefas sem sair da conversa.
 
-| Arquivo | Para quem | Fonte |
-| --- | --- | --- |
-| `.claude-plugin/plugin.json` | Claude Code e o diretório da Anthropic. `icon`, `documentationUrl`, `supportUrl`, `privacyPolicyUrl` e `termsOfServiceUrl` são os campos de listagem do diretório; o Claude Code os ignora ao carregar | <https://code.claude.com/docs/en/plugins/manifest-reference> |
-| `.claude-plugin/marketplace.json` | O nosso marketplace. O plugin é a própria raiz (`"source": "./"`) | <https://code.claude.com/docs/en/plugins/publish>, <https://code.claude.com/docs/en/plugins/marketplace-reference> |
-| `.codex-plugin/plugin.json` | ChatGPT e Codex. `interface` é a listagem; `extensions.com.openai.review` leva os casos de teste | <https://developers.openai.com/plugins/deploy/submission>, <https://developers.openai.com/plugins/guides/submit-claude-plugin> |
-| `.mcp.json` | Claude Code e Codex. `type: "http"` + `url`; o Codex aceita esse formato (teste `codex-rs/codex-mcp/src/plugin_config_tests.rs`) | <https://code.claude.com/docs/en/plugins/manifest-reference>, <https://github.com/openai/codex> |
-| `plugin.json` | Antigravity. O esquema só aceita `name` e `description`, por isso não leva `version` | <https://antigravity.google/docs/plugins.md> |
-| `mcp_config.json` | Antigravity. Só `serverUrl`, sem credencial no arquivo | <https://antigravity.google/docs/mcp> |
-| `LICENSE` | O diretório da Anthropic (o checklist recusa plugin sem licença) e quem redistribui. O texto da Apache 2.0 do apache.org, sem alteração (D-MCP2-82) | <https://claude.com/docs/plugins/pre-submission-checklist>, <https://www.apache.org/licenses/LICENSE-2.0.txt> |
-| `NOTICE` | Quem redistribui (seção 4(d) da Apache). Tira o logo e o nome da licença; a mesma exceção está na seção Licença acima, onde ela vale | <https://www.apache.org/licenses/LICENSE-2.0.txt> |
-| `skills/*/SKILL.md` | Os três. Cabeçalho YAML com `name` e `description`; linguagem neutra de provedor, como a OpenAI pede | <https://code.claude.com/docs/en/skills>, <https://antigravity.google/docs/skills>, <https://developers.openai.com/plugins/guides/submit-claude-plugin> |
+### O que vem no plugin
 
-Regras: sem hooks, commands, agents nem `userConfig`, o menor denominador comum entre os três.
-A `version` é a mesma em `.claude-plugin/plugin.json`, `.codex-plugin/plugin.json` e no
-`server.json` do MCP Registry. Ela é igual à do workspace `connect/` e só sobe quando muda
-manifesto ou skill. Os testes em `connect/plugins/test/plugins.test.mjs` conferem isso.
+- **O servidor do Arthus**, no endereço `https://mcp.arthus.ai/mcp`. Ele usa o MCP, o padrão
+  aberto que liga assistentes a apps. Nenhuma senha ou chave fica no plugin. Você entra pelo site
+  do Arthus.
+- **Três skills**, que ensinam o assistente a usar o Arthus bem:
+  - `recap`: o que ficou combinado numa reunião, as tarefas e o que ficou em aberto. Cada minuto
+    citado leva àquele momento.
+  - `my-week`: as suas tarefas em aberto, as atrasadas primeiro, e as decisões da semana.
+  - `prepare`: prepara a sua próxima reunião com uma pessoa ou uma empresa, ou sobre um assunto.
+
+### O que o assistente pode fazer
+
+Você escolhe as permissões ao conectar. Ler vem sempre; as outras começam desmarcadas.
+
+- **Ler:** achar reuniões, ler resumos e transcrições, e listar tarefas e projetos.
+- **Organizar, se você permitir:** mudar o andamento ou o prazo de uma tarefa, e mover ou renomear
+  reuniões. Também pode dar nome a um locutor depois que você confirma, e criar projetos.
+- **Usar a IA do Arthus, se você permitir:** perguntar sobre uma reunião ou criar o mapa mental
+  dela. Isso tem um limite próprio por hora e por dia.
+
+Só no app do Arthus: gravar, apagar ou arquivar reuniões, link público, e-mail, importar arquivos e
+mudar o plano.
+
+Para mudar as permissões ou desconectar, use **Configurações → Assistentes de IA** no Arthus.
+
+### Como instalar
+
+O passo a passo de cada assistente fica em <https://arthus.ai/conectar>.
+
+No primeiro uso, o assistente abre a tela de login do Arthus. Entre, confirme o código do e-mail
+se ele pedir e escolha o que ele pode fazer.
+
+### Privacidade
+
+- O assistente só vê o que você vê no Arthus, com os limites do seu plano. No plano Grátis, são as
+  reuniões dos últimos 30 dias.
+- Reuniões gravadas como entrevista e as marcadas como "Dado de terceiro" não chegam ao
+  assistente.
+- O que o assistente lê das reuniões também é tratado pela empresa por trás dele, sob as regras
+  dela.
+- Resumos, tarefas, análises, mapas mentais e respostas vêm da IA do Arthus. Os títulos e os nomes
+  de locutor marcados como da IA também. Podem ter erros. Cada reunião vem com o link para você
+  conferir na fonte.
+- Política de Privacidade: <https://arthus.ai/pt-BR/privacidade> · Termos de Uso:
+  <https://arthus.ai/pt-BR/termos>
+
+### Contato
+
+<contact@arthus.ai>
+
+### Licença
+
+O conteúdo deste plugin usa a licença Apache 2.0 (arquivo `LICENSE`). O logo (assets/logo.png) e
+o nome Arthus não entram nesta licença. O logo só pode ser usado sem alteração, para falar do
+Arthus. Detalhes no arquivo `NOTICE`.
