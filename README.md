@@ -32,7 +32,7 @@ Na tela do Arthus, você escolhe o que cada assistente pode fazer. Para desconec
 
 ## Como instalar
 
-O passo a passo de cada assistente, com a data do teste, fica em <https://arthus.ai/conectar>.
+O passo a passo de cada assistente fica em <https://arthus.ai/conectar>.
 
 No primeiro uso, o assistente abre a tela de login do Arthus. Você entra e escolhe o que ele pode
 fazer.
@@ -89,7 +89,7 @@ On the Arthus screen, you choose what each assistant may do. To disconnect, use
 
 ### How to install
 
-The steps for each assistant, with the date they were tested, are at <https://arthus.ai/conectar>.
+The steps for each assistant are at <https://arthus.ai/conectar>.
 
 On first use, the assistant opens the Arthus sign-in screen. You sign in and choose what it may do.
 
