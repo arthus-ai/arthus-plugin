@@ -8,6 +8,7 @@
     "email": "contact@arthus.ai",
     "url": "https://arthus.ai"
   },
+  "license": "Apache-2.0",
   "homepage": "https://arthus.ai/conectar",
   "keywords": ["meetings", "transcripts", "tasks", "notes", "productivity"],
   "icon": "./assets/logo.png",

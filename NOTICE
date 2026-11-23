@@ -1,0 +1,14 @@
+Arthus plugin
+Copyright 2026 Crivian Tecnologia e Desenvolvimento Ltda
+
+Except as noted below, the contents of this plugin are licensed under the
+Apache License, Version 2.0 (see LICENSE).
+
+The file assets/logo.png is not licensed under the Apache License: no
+copyright or trademark license is granted for it, beyond using it unmodified
+to refer to Arthus. The Arthus name is a trademark of Crivian Tecnologia e
+Desenvolvimento Ltda and is not licensed either (see section 6 of the License).
+
+The Arthus service that this plugin connects to (https://mcp.arthus.ai/mcp)
+is not part of this plugin and is governed by the Arthus Terms of Use:
+https://arthus.ai/pt-BR/termos

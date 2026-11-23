@@ -55,6 +55,12 @@ quando cada cliente passar na matriz de testes do dono (PLANO_MCP_E_CLI §10.3).
 
 <contact@arthus.ai>
 
+## Licença
+
+O conteúdo deste plugin usa a licença Apache 2.0 (arquivo `LICENSE`). O logo
+(`assets/logo.png`) e o nome Arthus não entram na licença: o logo só pode ser usado sem
+alteração, para falar do Arthus. Detalhes no arquivo `NOTICE`.
+
 ---
 
 ## English
@@ -108,6 +114,12 @@ On first use, the assistant opens the Arthus sign-in screen. You sign in and cho
 
 <contact@arthus.ai>
 
+### License
+
+The contents of this plugin are under the Apache License 2.0 (`LICENSE`). The logo
+(`assets/logo.png`) and the Arthus name are not licensed: the logo may only be used unmodified,
+to refer to Arthus. See `NOTICE`.
+
 ---
 
 ## Para quem mantém: os manifestos e de onde vem cada campo
@@ -124,6 +136,8 @@ copiada para o repositório público por `connect/scripts/publicar-plugin.mjs`. 
 | `.mcp.json` | Claude Code e Codex. `type: "http"` + `url`; o Codex aceita esse formato (teste `codex-rs/codex-mcp/src/plugin_config_tests.rs`) | <https://code.claude.com/docs/en/plugins/manifest-reference>, <https://github.com/openai/codex> |
 | `plugin.json` | Antigravity. O esquema só aceita `name` e `description`, por isso não leva `version` | <https://antigravity.google/docs/plugins.md> |
 | `mcp_config.json` | Antigravity. Só `serverUrl`, sem credencial no arquivo | <https://antigravity.google/docs/mcp> |
+| `LICENSE` | O diretório da Anthropic (o checklist recusa plugin sem licença) e quem redistribui. O texto da Apache 2.0 do apache.org, sem alteração (D-MCP2-82) | <https://claude.com/docs/plugins/pre-submission-checklist>, <https://www.apache.org/licenses/LICENSE-2.0.txt> |
+| `NOTICE` | Quem redistribui (seção 4(d) da Apache). Tira o logo e o nome da licença; a mesma exceção está na seção Licença acima, onde ela vale | <https://www.apache.org/licenses/LICENSE-2.0.txt> |
 | `skills/*/SKILL.md` | Os três. Cabeçalho YAML com `name` e `description`; linguagem neutra de provedor, como a OpenAI pede | <https://code.claude.com/docs/en/skills>, <https://antigravity.google/docs/skills>, <https://developers.openai.com/plugins/guides/submit-claude-plugin> |
 
 Regras: sem hooks, commands, agents nem `userConfig`, o menor denominador comum entre os três.
